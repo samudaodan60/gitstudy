@@ -1,0 +1,21 @@
+
+
+
+bash configure
+
+yum install java-1.7.0-openjdk-devel
+yum install java-1.7.0-openjdk 
+yum install zip
+yum groupinstall "Development Tools"
+yum install libXtst-devel libXt-devel libXrender-devel
+yum install cups-devel
+yum install freetype-devel
+yum install alsa-lib-devel
+yum install ccache
+
+make clean 
+make all
+#查看完整包名
+rpm -qa |grep openjdk
+#查看安装详细路径
+ rpm -ql java-1.7.0-openjdk-devel-1.7.0.181-2.6.14.8.el7_5.x86_64
